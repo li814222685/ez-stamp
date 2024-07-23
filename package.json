@@ -1,0 +1,19 @@
+{
+  "name": "ez-stamp",
+  "version": "1.0.0",
+  "description": "easy generate stamp png",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stamp",
+    "png",
+    "js"
+  ],
+  "author": "sonic.lee",
+  "license": "ISC",
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.4"
+  }
+}
