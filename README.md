@@ -24,10 +24,10 @@ The `StampGenerator` class is designed to facilitate the creation and manipulati
 
 To use the `StampGenerator`,
 
-```
+```bash
 bash
 
-npm install
+npm install ez-stamp
 ```
 
 #### Usage
@@ -36,7 +36,7 @@ npm install
 
 Create a new instance of `StampGenerator` by providing the container ID, main text, and base text.
 
-```
+```js
 javascript
 
 const myStamp = new StampGenerator('container', 'Main Text', 'Base Text');
@@ -63,7 +63,7 @@ const myStamp = new StampGenerator('container', 'Main Text', 'Base Text');
 
 #### Example
 
-```
+```js
 javascript
 
 // Importing the StampGenerator class
@@ -97,7 +97,7 @@ This documentation provides a comprehensive guide on how to utilize the `StampGe
 
 
 
-```
+```bash
 bash
 
 npm instal ez-stamp
@@ -109,7 +109,7 @@ npm instal ez-stamp
 
 通过提供容器ID、主文本和基础文本来创建 `StampGenerator` 的新实例。
 
-```
+```js
 javascript
 
 const myStamp = new StampGenerator('containerId', '主文本', '基础文本');
