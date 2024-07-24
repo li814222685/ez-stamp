@@ -67,7 +67,7 @@ const myStamp = new StampGenerator('container', 'Main Text', 'Base Text');
 javascript
 
 // Importing the StampGenerator class
-import {StampGenerator} from 'ez-stamp';
+import StampGenerator from 'ez-stamp';
 
 // Creating &&Generate a stamp generator instance 
 const myStamp = new StampGenerator('myContainer', 'Sample Main Text', 'Sample Base Text');
@@ -140,7 +140,7 @@ const myStamp = new StampGenerator('containerId', '主文本', '基础文本');
 javascript
 
 // 导入StampGenerator类
-import {StampGenerator} from 'ez-stamp';
+import StampGenerator from 'ez-stamp';
 
 // 创建一个StampGenerator实例
 const 我的印章 = new StampGenerator('containerId', '示例主文本', '示例基础文本');
