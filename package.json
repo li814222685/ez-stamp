@@ -1,6 +1,6 @@
 {
   "name": "ez-stamp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "easy generate stamp png",
   "main": "index.js",
   "scripts": {
