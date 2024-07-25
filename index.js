@@ -32,13 +32,12 @@ export default class StampGenerator {
       centerY + radius
     } A ${radius} ${radius} 0 1 1 ${centerX} ${centerY - radius}`;
   }
-  //上弦文path
   static createUptextPath() {
-    return `M ${100} ${200} A ${70} ${70} 0 1 1 ${200} ${200}`;
+    return `M ${86} ${175} A ${67} ${67} 0 1 1 ${205} ${192}`;
   }
-  //下弦文path
+
   static createBottomtextPath() {
-    return `M ${100} ${225} L ${200} ${225}`;
+    return `M ${100} ${205} L ${200} ${205}`;
   }
   static createCodeTextPath() {
     return `M ${85} ${210} A ${70} ${80} 0 1 0 ${218} ${50}`;
