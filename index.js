@@ -1,12 +1,13 @@
 import { SVG } from "@svgdotjs/svg.js";
 export default class StampGenerator {
-  constructor(containerId, mainText, baseText) {
+  constructor(containerId, mainText = "", baseText = "", codeText = "") {
     this.draw = SVG().addTo(`#${containerId}`).size(300, 300);
     this.radius = 100;
     this.centerX = 150;
     this.centerY = 150;
     this.mainText = mainText;
     this.baseText = baseText;
+    this.codeText = codeText;
     this.generate();
   }
   //五角星path
@@ -39,6 +40,9 @@ export default class StampGenerator {
   static createBottomtextPath() {
     return `M ${100} ${225} L ${200} ${225}`;
   }
+  static createCodeTextPath() {
+    return `M ${85} ${210} A ${70} ${80} 0 1 0 ${218} ${50}`;
+  }
 
   generate() {
     const starPath = StampGenerator.createStarPath(
@@ -66,7 +70,7 @@ export default class StampGenerator {
     const upperText = this.draw.text((add) => {
       add.tspan(this.mainText).fill("red").font({ size: 26, family: "kai" });
     });
-    upperText.node.setAttribute("textLength", 330);
+    upperText.node.setAttribute("textLength", 250);
     upperText.path(upTextPath);
 
     const lowerText = this.draw.text((add) => {
@@ -77,6 +81,11 @@ export default class StampGenerator {
     });
     lowerText.node.setAttribute("textLength", 100);
     lowerText.path(StampGenerator.createBottomtextPath());
+    const codeText = this.draw.text((add) => {
+      add.tspan(this.codeText).fill("red").font({ size: 12 });
+    });
+    codeText.path(StampGenerator.createCodeTextPath());
+    codeText.node.setAttribute("textLength", 150);
   }
 
   download() {
